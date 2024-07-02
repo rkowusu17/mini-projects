@@ -554,10 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -611,11 +607,6 @@ video {
 .border-slate-300 {
   --tw-border-opacity: 1;
   border-color: rgb(203 213 225 / var(--tw-border-opacity));
-}
-
-.border-slate-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(148 163 184 / var(--tw-border-opacity));
 }
 
 .bg-pink-500 {
@@ -686,19 +677,6 @@ video {
 }
 
 @keyframes blink {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.2);
-    border: 2px #d72a76 solid;
-  }
-
-  100% {
-    transform: scale(1);
-  }
-
    0% {
     transform: scale(1);
   }
@@ -718,16 +696,8 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:h-72 {
-    height: 18rem;
-  }
-
   .md\:h-80 {
     height: 20rem;
-  }
-
-  .md\:w-72 {
-    width: 18rem;
   }
 
   .md\:w-80 {

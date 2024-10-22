@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #e0ffff, #ffc0cb);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 650px;
+  margin: 100px auto;
+  padding: 20px 5px;
+  background: linear-gradient(to left, #3466d1, #ff1493);
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.row {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.row:hover {
+  transform: scale(1.05);
+}
+
+img {
+  margin-right: 10px;
+}
+input[type="number"] {
+  padding: 15px;
+  font-size: 15px;
+  width: 300px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  flex: 1;
+  transition: border-color 0.3s ease;
+  background-color: #fff;
+  color: #333;
+  font-weight: 600;
+}
+
+input[type="number"]:focus {
+  border-color: #ff7ef5;
+  outline: none;
+  box-shadow: 0 0 2px #ff7e5f;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cash-text {
+  font-weight: bold;
+  margin-left: 10px;
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff7e5f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+}
+
+button:hover {
+  background-color: #ff6c4a;
+}
+
+#txtfinalCash {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #ffffff;
+}
+#txtfinalCashWords {
+  margin-top: 10px;
+  font-style: italic;
+  color: #fff;
+}
+
+.result-part {
+  display: flex;
+  flex-direction: column;
+}

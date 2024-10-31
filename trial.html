@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="number"> Choose a number </label>
+    <input type="number" id="number" />
+    <p id="outcome"></p>
+    <button onclick="show()" id="show">Load number</button>
+  </body>
+
+  <script>
+    const inputEl = document.getElementById("number");
+    const btnEl = document.getElementById("show");
+    const output = document.getElementById("outcome");
+
+    function show() {
+      const value = inputEl.value;
+      const valueInt = parseInt(value);
+
+      output.textContent = valueInt;
+    }
+  </script>
+</html>

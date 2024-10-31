@@ -2,11 +2,43 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    to bottom,
+    rgb(208, 117, 132),
+    rgb(204, 82, 131),
+    #fff
+  );
+  background-repeat: no-repeat;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
 h1 {
+  padding: 10px 30px;
   text-align: center;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  font-family: monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(23) forwards infinite, blink 0.8s step-end infinite;
+}
+#colnumber {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+#colnumber input {
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  padding: 5px;
+}
+#colnumber button {
+  width: 300px;
+  border: 1px solid #585555;
 }
 .container {
   display: flex;
@@ -27,6 +59,7 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   /* border: 2px solid transparent; */
   border-radius: 5px;
+  cursor: pointer;
 }
 
 button {
@@ -40,4 +73,19 @@ button {
 }
 button:hover {
   background-color: rgb(148, 136, 136);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }

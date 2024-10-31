@@ -15,14 +15,18 @@ header {
   display: flex;
   justify-content: center;
 }
-h1 {
+header p {
+  font-size: 1.5rem;
+  width: 50%;
   padding: 10px 30px;
   text-align: center;
   /* text-decoration: underline; */
   font-family: monospace;
-  overflow: hidden;
   white-space: nowrap;
-  animation: typing 2s steps(23) forwards infinite, blink 0.8s step-end infinite;
+  margin-inline: auto;
+  border-right: 1px solid black;
+  animation: typing 6s steps(23) forwards, blink 1s infinite;
+  overflow: hidden;
 }
 #colnumber {
   display: grid;

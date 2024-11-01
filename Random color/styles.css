@@ -34,14 +34,16 @@ header p {
   font-size: 20px;
 }
 #colnumber input {
-  width: 400px;
+  width: 200px;
   border-radius: 5px;
   border: 1px solid #333;
   padding: 5px;
+  text-align: center;
 }
 #colnumber button {
-  width: 300px;
-  border: 1px solid #585555;
+  width: 150px;
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
 .container {
   display: flex;

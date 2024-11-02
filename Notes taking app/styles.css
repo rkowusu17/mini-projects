@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+}
+main {
+  min-height: 100vh;
+  padding-bottom: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#addBtn {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  background-color: #179712;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#addBtn:hover {
+  background-color: #06a006;
+}
+
+.note {
+  background: transparent;
+  margin: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.tool {
+  background-color: #222831;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  /* gap: 10px; */
+}
+
+.tool i {
+  padding: 5px;
+  cursor: pointer;
+  transition: color o.3s ease;
+}
+.tool i:hover {
+  color: #aca1a1;
+}
+
+.note textarea {
+  width: 300px;
+  border: none;
+  min-height: 220px;
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  overflow: hidden;
+  background-color: #393846;
+  border-radius: 0px 0px 10px 10px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.note textarea:hover {
+  background-color: #1c2326;
+}

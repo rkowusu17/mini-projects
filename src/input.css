@@ -9,3 +9,11 @@
 .h {
   height: 450px;
 }
+
+.linearbackground {
+  background: linear-gradient(
+    to right,
+    rgba(162, 40, 113, 0.6),
+    rgba(138, 37, 81, 0.7)
+  );
+}

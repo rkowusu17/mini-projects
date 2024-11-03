@@ -1,5 +1,17 @@
 {
   "dependencies": {
     "tailwindcss": "^3.4.4"
-  }
+  },
+  "name": "mini-projects",
+  "description": "JavaScript mini-prijects for practice",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

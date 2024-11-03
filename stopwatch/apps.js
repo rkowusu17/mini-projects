@@ -104,10 +104,5 @@ function clearAll() {
     lapList.innerHTML = `Cleared`;
     lapList.style.textAlign = "center";
     lapList.style.padding = "10px";
-    // setTimeout(2000, delClear());
   }
-}
-
-function delClear() {
-  lapList.innerHTML = ``;
 }

@@ -104,5 +104,10 @@ function clearAll() {
     lapList.innerHTML = `Cleared`;
     lapList.style.textAlign = "center";
     lapList.style.padding = "10px";
+    let timer = setInterval(deleteMessage, 3000);
   }
+}
+
+function deleteMessage() {
+  lapList.textContent = ``;
 }

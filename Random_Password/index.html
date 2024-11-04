@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PassGen.web</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div class="inputBox">
+        <input type="text" class="passBox" id="passBox" disabled />
+        <span class="material-symbols-outlined" id="copyIcon">
+          content_copy
+        </span>
+      </div>
+      <div class="pass-indicator" id="passIndicator"></div>
+      <input
+        type="range"
+        name=""
+        id="inputSlider"
+        min="1"
+        max="25"
+        value="6"
+        step="1"
+      />
+
+      <div class="row">
+        <p>Password Length</p>
+        <span id="sliderValue"></span>
+      </div>
+
+      <div class="row">
+        <label for="Lowcase">Include Lowcase (a-z)</label>
+        <input type="checkbox" name="Lowcase" id="Lowcase" checked />
+      </div>
+      <div class="row">
+        <label for="Uppercase">Include Uppercase (A-Z)</label>
+        <input type="checkbox" name="Uppercase" id="Uppercase" checked />
+      </div>
+      <div class="row">
+        <label for="Numbers">Include Numbers (0-9)</label>
+        <input type="checkbox" name="Numbers" id="Numbers" checked />
+      </div>
+      <div class="row">
+        <label for="symbols">Include symbols (@-*)</label>
+        <input type="checkbox" name="symbols" id="symbols" />
+      </div>
+      <button class="genBtn" id="genBtn">Generate Password</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

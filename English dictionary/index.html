@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D!ct!onary.web</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <header>
+        <h1>English Dictionary</h1>
+      </header>
+
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Enter a text" />
+        <button id="serachBtn">search</button>
+      </div>
+
+      <div class="result-cont" id="resultCont">
+        <h2 id="wordTitle"></h2>
+        <!-- <h4 id="wordPhonics"></h4> -->
+        <div id="wordDescription"></div>
+        <div id="audioContainer">
+          <button id="audioButton">
+            <i class="fa-solid fa-volume-high"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/c6b3e02100.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -67,7 +67,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 copyBtn.addEventListener("click", () => {
   if (passBox.value != "" || passBox.value >= 1) {
-    navigator.clipboard.writeText(passBox);
+    navigator.clipboard.writeText(passBox.value);
     copyBtn.innerText = "check";
 
     setTimeout(() => {

@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        80: "80vh",
+        90: "90vh",
       },
       transition: {
         cust: "all 1s ease ",
@@ -26,12 +26,10 @@ module.exports = {
           "from ": {
             opacity: "0",
             scale: "0",
-            transform: "translateX(-150px)",
           },
           to: {
             opacity: "1",
             scale: "1",
-            transform: "translateX(0px)",
           },
         },
       },

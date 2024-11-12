@@ -1,25 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>mini-projects</title>
     <link rel="stylesheet" href="./src/output.css" />
     <script
       src="https://kit.fontawesome.com/c6b3e02100.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      @keyframes appear {
+        from {
+          opacity: 0;
+          /* scale: 0.5; */
+          transform: translateX(-200px);
+        }
+
+        to {
+          opacity: 1;
+          /* scale: 1; */
+          transform: translateX(0px);
+        }
+      }
+      .cont {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 50%;
+      }
+    </style>
   </head>
   <body class="linearbackground">
-    <header class="bg-slate-800 text-slate-100 p-6 text-3xl">
+    <header class="text-slate-100 p-6 text-3xl h-80 lg:mb-32">
       <h1 class="text-center animate-pulse">Mini-projects</h1>
+      <div
+        class="flex items-center justify-center flex-col gap-40 lg:flex-row py-20 px-40 lg:justify-between"
+      >
+        <h2>Text here</h2>
+        <img
+          class="rounded-md"
+          src="img/startpic.png"
+          alt="project-pic"
+          srcset=""
+          width="70%"
+        />
+      </div>
     </header>
     <main
       class="flex flex-wrap justify-center items-center gap-10 p-14 md:p-20"
     >
       <a href="/stopwatch/index.html">
         <div
-          class="w-60 h-60 grid place-items-center bg-pink-500 text-xl rounded-md widedim font-bold text-slate-100"
+          class="w-60 h-60 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:border-2 hover:shadow-lg transition-all border-pink-800 cont"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">
             <i class="fa-solid fa-stopwatch"></i>
@@ -38,7 +70,7 @@
 
       <a href="/CashFlow Calc/index.html">
         <div
-          class="w-60 h-60 grid place-items-center bg-pink-500 text-xl rounded-md widedim font-bold text-slate-100"
+          class="w-60 h-60 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:border-2 hover:shadow-lg transition-all border-pink-800 cont"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">
             <i class="fa-solid fa-money-bill-wave"></i>
@@ -57,7 +89,7 @@
 
       <a href="/English dictionary/index.html">
         <div
-          class="w-60 h-60 grid place-items-center bg-pink-500 text-xl rounded-md widedim font-bold text-slate-100"
+          class="w-60 h-60 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:border-2 hover:shadow-lg transition-all border-pink-800 cont"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">
             <i class="fa-solid fa-book"></i>
@@ -75,7 +107,7 @@
 
       <a href="/Random_Password/index.html">
         <div
-          class="w-60 h-60 grid place-items-center bg-pink-500 text-xl rounded-md widedim font-bold text-slate-100"
+          class="w-60 h-60 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:border-2 hover:shadow-lg transition-all border-pink-800 cont"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">
             <i class="fa-solid fa-lock"></i>
@@ -93,7 +125,7 @@
       </a>
       <a href="">
         <div
-          class="w-60 h-60 grid place-items-center bg-pink-500 text-xl rounded-md widedim font-bold text-slate-100"
+          class="w-60 h-60 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:border-2 hover:shadow-lg transition-all border-pink-800 cont"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">
             <i class="fa-solid fa-note-sticky"></i>
@@ -109,9 +141,24 @@
           />
         </div>
       </a>
+      <a href="/Poll System/index.html">
+        <div
+          class="w-60 h-60 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:border-2 hover:shadow-lg transition-all border-pink-800 cont"
+        >
+          <h2 class="text-4xl text-center p-2 lg:text-5xl">Poll system</h2>
+          <img
+            class="rounded-md h-2/3 w-2/3"
+            src="img/poll.jpg"
+            alt="
+            "
+            srcset=""
+            loading="lazy"
+          />
+        </div>
+      </a>
       <a href="">
         <div
-          class="w-60 h-60 grid place-items-center bg-pink-500 text-xl rounded-md widedim font-bold text-slate-100"
+          class="w-60 h-60 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:border-2 hover:shadow-lg transition-all border-pink-800 cont"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">hello</h2>
           <img
@@ -126,7 +173,7 @@
       </a>
       <a href="">
         <div
-          class="w-60 h-60 grid place-items-center bg-pink-500 text-xl rounded-md widedim font-bold text-slate-100"
+          class="w-60 h-60 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:border-2 hover:shadow-lg transition-all border-pink-800 cont"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">hello</h2>
           <img
@@ -141,7 +188,7 @@
       </a>
       <a href="">
         <div
-          class="w-60 h-60 grid place-items-center bg-pink-500 text-xl rounded-md widedim font-bold text-slate-100"
+          class="w-60 h-60 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:border-2 hover:shadow-lg transition-all border-pink-800 cont"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">hello</h2>
           <img
@@ -156,7 +203,7 @@
       </a>
       <a href="">
         <div
-          class="w-60 h-60 grid place-items-center bg-pink-500 text-xl rounded-md widedim font-bold text-slate-100"
+          class="w-60 h-60 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:border-2 hover:shadow-lg transition-all border-pink-800 cont"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">hello</h2>
           <img
@@ -171,7 +218,7 @@
       </a>
       <a href="">
         <div
-          class="w-60 h-60 grid place-items-center bg-pink-500 text-xl rounded-md widedim font-bold text-slate-100"
+          class="w-60 h-60 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:border-2 hover:shadow-lg transition-all border-pink-800 cont"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">hello</h2>
           <img
@@ -186,22 +233,7 @@
       </a>
       <a href="">
         <div
-          class="w-60 h-60 grid place-items-center bg-pink-500 text-xl rounded-md widedim font-bold text-slate-100"
-        >
-          <h2 class="text-4xl text-center p-2 lg:text-5xl">hello</h2>
-          <img
-            class="rounded-md h-2/3 w-2/3"
-            src=""
-            alt="
-            "
-            srcset=""
-            loading="lazy"
-          />
-        </div>
-      </a>
-      <a href="">
-        <div
-          class="w-60 h-60 grid place-items-center bg-pink-500 text-xl rounded-md widedim font-bold text-slate-100"
+          class="w-60 h-60 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:border-2 hover:shadow-lg transition-all border-pink-800 cont"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">hello</h2>
           <img
@@ -215,7 +247,7 @@
         </div>
       </a>
     </main>
-    <aside class="grid grid-flow-row gap-20 place-items-center radbackground">
+    <aside class="grid grid-flow-row gap-20 place-items-center">
       <div class="">
         <h3 class="text-4xl text-center text-slate-50 md:text-5xl p-10">
           These some mini-projects inspired by some youtube and udemy

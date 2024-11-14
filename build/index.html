@@ -32,7 +32,7 @@
     </style>
   </head>
   <body class="linearbackground">
-    <header class="text-slate-100 p-6 text-3xl h-90 lg:mb-32 relative" id="top">
+    <header class="text-slate-100 p-6 text-3xl h-90 md:mb-32 relative" id="top">
       <a href="#top">
         <h1
           class="text-center animate-pulse text-4xl font-semibold header w-full"
@@ -41,36 +41,38 @@
         </h1>
       </a>
       <div
-        class="flex items-center justify-center flex-col gap-20 lg:flex-row p-20 lg:justify-center mt-40"
+        class="flex items-center justify-center flex-col gap-20 lg:flex-row p-20 lg:justify-center mt-20"
       >
         <div class="flex flex-col gap-20 animate-appearTop">
           <blockquote class="relative">
             <h2
-              class="text-6xl whitespace-nowrap text-center lg:text-7xl before:content-['\201C'] before:font-serif before:absolute before:-top-1 before:left-5 before:opacity-45 after:content-['\201D'] after:font-serif after:absolute after:-bottom-5 after:right-0 after:opacity-45"
+              class="text-3xl whitespace-nowrap text-center lg:text-7xl lg:mx-5 before:content-['\201C'] before:font-serif before:absolute before:-top-1 before:-left-5 before:opacity-45 after:content-['\201D'] after:font-serif after:absolute after:-bottom-5 after:-right-5 after:opacity-45"
             >
               Hello World!!
             </h2>
           </blockquote>
-          <p class="about text-left lg:text-6xl">
+          <p class="text-xl about text-left sm:text-3xl">
             Below are some facinating projects I've been building over the
             weeks, feel free to go through them. <br />
+            <br />
             They won't bite
           </p>
         </div>
         <img
-          class="lg:w-60 lg:h-30"
+          class="hidden lg:inline-block lg:w-60 lg:h-30"
           src="img/startpic.png"
           alt="project-pic"
           srcset=""
         />
       </div>
     </header>
+
     <main
-      class="flex flex-wrap justify-center items-center gap-20 p-14 md:p-20"
+      class="mt-10 flex flex-wrap justify-center items-center gap-10 md:gap-20 p-14"
     >
       <a href="/stopwatch/index.html">
         <div
-          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear"
+          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear mb-10"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">
             <i class="fa-solid fa-stopwatch"></i>
@@ -89,7 +91,7 @@
 
       <a href="/CashFlow Calc/index.html">
         <div
-          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear"
+          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear mb-10"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">
             <i class="fa-solid fa-money-bill-wave"></i>
@@ -108,7 +110,7 @@
 
       <a href="/English dictionary/index.html">
         <div
-          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear"
+          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear mb-10"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">
             <i class="fa-solid fa-book"></i>
@@ -126,7 +128,7 @@
 
       <a href="/Random_Password/index.html">
         <div
-          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear"
+          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear mb-10"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">
             <i class="fa-solid fa-lock"></i>
@@ -144,7 +146,7 @@
       </a>
       <a href="">
         <div
-          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear"
+          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear mb-10"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">
             <i class="fa-solid fa-note-sticky"></i>
@@ -162,7 +164,7 @@
       </a>
       <a href="/Poll System/index.html">
         <div
-          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear"
+          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear mb-10"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">
             <i class="fa-solid fa-check-to-slot"></i>
@@ -180,11 +182,11 @@
       </a>
       <a href="/Random color/index.html">
         <div
-          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear"
+          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear mb-10"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">
             <i class="fa-solid fa-palette"></i>
-            Random color Generator
+            Color Generator
           </h2>
           <img
             class="rounded-md h-2/3 w-2/3"
@@ -198,7 +200,7 @@
       </a>
       <a href="">
         <div
-          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear"
+          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear mb-10"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">hello</h2>
           <img
@@ -213,7 +215,7 @@
       </a>
       <a href="">
         <div
-          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear"
+          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear mb-10"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">hello</h2>
           <img
@@ -228,7 +230,7 @@
       </a>
       <a href="">
         <div
-          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear"
+          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear mb-10"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">hello</h2>
           <img
@@ -243,7 +245,7 @@
       </a>
       <a href="">
         <div
-          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear"
+          class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear mb-10"
         >
           <h2 class="text-4xl text-center p-2 lg:text-5xl">hello</h2>
           <img

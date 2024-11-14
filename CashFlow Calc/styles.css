@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 650px;
+  width: 90%;
   margin: 100px auto;
   padding: 20px 5px;
   background: linear-gradient(to left, #3466d1, #ff1493);
@@ -57,9 +57,9 @@ img {
   margin-right: 10px;
 }
 input[type="number"] {
-  padding: 15px;
-  font-size: 15px;
-  width: 300px;
+  padding: 10px;
+  font-size: 0.8rem;
+  width: 80%;
   border-radius: 4px;
   border: 1px solid #ccc;
   flex: 1;

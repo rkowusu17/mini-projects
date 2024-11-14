@@ -43,11 +43,15 @@
       <div
         class="flex items-center justify-center flex-col gap-20 lg:flex-row p-20 lg:justify-center mt-40"
       >
-        <div class="flex flex-col gap-20">
-          <h2 class="text-6xl animate-appearTop whitespace-nowrap text-center">
-            <blockquote><q> Hello World!!</q></blockquote>
-          </h2>
-          <p class="about animate-appearTop text-left lg:text-4xl lg:w-60">
+        <div class="flex flex-col gap-20 animate-appearTop">
+          <blockquote class="relative">
+            <h2
+              class="text-6xl whitespace-nowrap text-center lg:text-7xl before:content-['\201C'] before:font-serif before:absolute before:-top-1 before:left-5 before:opacity-45 after:content-['\201D'] after:font-serif after:absolute after:-bottom-5 after:right-0 after:opacity-45"
+            >
+              Hello World!!
+            </h2>
+          </blockquote>
+          <p class="about text-left lg:text-6xl">
             Below are some facinating projects I've been building over the
             weeks, feel free to go through them. <br />
             They won't bite
@@ -160,7 +164,10 @@
         <div
           class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear"
         >
-          <h2 class="text-4xl text-center p-2 lg:text-5xl">Poll system</h2>
+          <h2 class="text-4xl text-center p-2 lg:text-5xl">
+            <i class="fa-solid fa-check-to-slot"></i>
+            Poll system
+          </h2>
           <img
             class="rounded-md h-2/3 w-2/3"
             src="img/poll.jpg"
@@ -171,14 +178,17 @@
           />
         </div>
       </a>
-      <a href="">
+      <a href="/Random color/index.html">
         <div
           class="w-56 h-56 grid place-items-center bg-transparent text-xl rounded-md widedim font-bold text-slate-100 hover:shadow-lg cont animate-appear"
         >
-          <h2 class="text-4xl text-center p-2 lg:text-5xl">hello</h2>
+          <h2 class="text-4xl text-center p-2 lg:text-5xl">
+            <i class="fa-solid fa-palette"></i>
+            Random color Generator
+          </h2>
           <img
             class="rounded-md h-2/3 w-2/3"
-            src=""
+            src="img/colors.jpg"
             alt="
             "
             srcset=""

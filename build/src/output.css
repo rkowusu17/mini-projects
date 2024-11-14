@@ -632,11 +632,6 @@ video {
     scale: 0;
   }
 
-   50% {
-    opacity: 0.3;
-    scale: 0.4;
-  }
-
   100% {
     opacity: 1;
     scale: 1;
@@ -807,7 +802,7 @@ video {
   position: fixed;
   left: 0;
   top: 0;
-  background-color: rgba(30, 41, 59, 0.6);
+  background-color: rgb(30, 41, 59);
   padding: 10px 15px;
 }
 
@@ -825,6 +820,96 @@ video {
 
     /* height: 35rem; */
   }
+}
+
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:top-0::before {
+  content: var(--tw-content);
+  top: 0px;
+}
+
+.before\:-top-1::before {
+  content: var(--tw-content);
+  top: -0.25rem;
+}
+
+.before\:left-5::before {
+  content: var(--tw-content);
+  left: 1.25rem;
+}
+
+.before\:font-serif::before {
+  content: var(--tw-content);
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.before\:opacity-45::before {
+  content: var(--tw-content);
+  opacity: 0.45;
+}
+
+.before\:content-\[\'\\201C\'\]::before {
+  --tw-content: '\201C';
+  content: var(--tw-content);
+}
+
+.after\:absolute::after {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:-top-1::after {
+  content: var(--tw-content);
+  top: -0.25rem;
+}
+
+.after\:left-5::after {
+  content: var(--tw-content);
+  left: 1.25rem;
+}
+
+.after\:bottom-0::after {
+  content: var(--tw-content);
+  bottom: 0px;
+}
+
+.after\:-bottom-0::after {
+  content: var(--tw-content);
+  bottom: -0px;
+}
+
+.after\:-bottom-20::after {
+  content: var(--tw-content);
+  bottom: -5rem;
+}
+
+.after\:right-0::after {
+  content: var(--tw-content);
+  right: 0px;
+}
+
+.after\:-bottom-5::after {
+  content: var(--tw-content);
+  bottom: -1.25rem;
+}
+
+.after\:font-serif::after {
+  content: var(--tw-content);
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.after\:opacity-45::after {
+  content: var(--tw-content);
+  opacity: 0.45;
+}
+
+.after\:content-\[\'\\201D\'\]::after {
+  --tw-content: '\201D';
+  content: var(--tw-content);
 }
 
 .hover\:text-slate-900:hover {
@@ -881,6 +966,16 @@ video {
 
   .lg\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }

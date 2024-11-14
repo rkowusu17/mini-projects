@@ -41,10 +41,3 @@
     height: 35rem;
   }
 }
-
-.minwidth {
-  @media (min-width: 720px) {
-    min-width: 450px;
-    /* height: 35rem; */
-  }
-}

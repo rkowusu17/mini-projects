@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  width: clamp(450px, 50%, 600px);
+  max-width: 25rem;
   margin: 50px auto;
   padding: 20px;
   background-color: #fff;
@@ -37,6 +37,10 @@ header h1 {
   font-size: 16px;
   border-radius: 4px;
   border: none;
+}
+.search-container input:focus {
+  outline: none;
+  border: 2px solid #ccc;
 }
 button {
   padding: 10px 20px;

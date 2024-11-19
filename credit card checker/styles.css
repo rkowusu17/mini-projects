@@ -28,6 +28,10 @@ main label {
 }
 main input {
   margin-bottom: 10px;
+  width: 93%;
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 5px;
 }
 button {
   padding: 10px 20px;
@@ -35,6 +39,10 @@ button {
   font-weight: bold;
   border: none;
   background-color: rgb(57, 180, 57);
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 5px auto;
+}
+button:hover {
+  background-color: rgb(15, 142, 15);
+  cursor: pointer;
 }

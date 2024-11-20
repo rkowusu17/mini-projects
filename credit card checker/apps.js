@@ -53,14 +53,23 @@ const ccData = [
   }),
 ];
 
-checkBtn.addEventListener("click", () => {
+//  add a validation checker the run it through the data
+
+checkBtn.addEventListener("click", validation);
+document.getElementById("ccNnumber").addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    validation();
+  }
+});
+
+function validation() {
   const creditCardNumber = document.getElementById("ccNnumber").value;
+  const output = document.querySelector(".results");
   if (creditCardNumber.length === 14) {
     ccData.forEach((card) => {
-      console.log(card.name);
-      //   if (card.number === creditCardNumber) {
-      //     console.log(card.name);
-      //   }
+      if (creditCardNumber == card.number) {
+        output.textContent = ` ${card.name} is the name of the credit card holder`;
+      }
     });
   } else {
     const errorPrompt = document.createElement("p");
@@ -68,4 +77,4 @@ checkBtn.addEventListener("click", () => {
     errorPrompt.classList.add("error");
     area.appendChild(errorPrompt);
   }
-});
+}

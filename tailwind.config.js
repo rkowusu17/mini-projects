@@ -11,6 +11,7 @@ module.exports = {
       width: {
         60: "60%",
         40: "40%",
+        80: "20rem",
         102: "35rem",
       },
       borderRadius: {

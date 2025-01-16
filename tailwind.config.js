@@ -20,6 +20,9 @@ module.exports = {
       transition: {
         cust: "all 1s ease ",
       },
+      fontFamily: {
+        viet: ["Playwrite VN", "sans-serif"],
+      },
       keyframes: {
         blink: {
           " 0%": {

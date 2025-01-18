@@ -1,15 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* :root{
+    --FF: 
+} */
+
 body {
   background-color: #222;
+  font-family: "Quicksand", serif;
 }
 .card {
-  width: 95%;
-  max-width: 40rem;
+  width: 90%;
+  max-width: 35rem;
   background: linear-gradient(135deg, #00feba, #5b548a);
   color: #fff;
   margin: 100px auto 0;
@@ -29,11 +35,10 @@ body {
   outline: 0;
   background-color: #ebfffc;
   color: #555;
-  padding-inline: 25px;
-  padding-block: 10px;
+  padding: 10px 25px;
   border-radius: 20px;
   flex: 1;
-  margin-right: 16px;
+  margin-right: 0.7rem;
   font-size: 1.2rem;
 }
 .search button {
@@ -48,4 +53,40 @@ body {
 
 .search button img {
   width: 60%;
+}
+
+.weather-icon {
+  width: 11rem;
+  margin-top: 2.2rem;
+}
+.weather h1 {
+  font-size: 6rem;
+  font-weight: 500;
+}
+.weather h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.col img {
+  width: 3.2rem;
+  margin-right: 10px;
+}
+.humidity,
+.wind {
+  font-size: 1.7rem;
+  margin-top: -0.3rem;
 }

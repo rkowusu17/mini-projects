@@ -90,3 +90,15 @@ body {
   font-size: 1.7rem;
   margin-top: -0.3rem;
 }
+.weather,
+.details {
+  display: none;
+}
+.error {
+  color: red;
+  font-size: 2rem;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: none;
+}

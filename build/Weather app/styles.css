@@ -31,13 +31,13 @@ body {
   justify-content: space-between;
 }
 .search input {
+  width: 70%;
   border: 0;
   outline: 0;
   background-color: #ebfffc;
   color: #555;
   padding: 10px 25px;
   border-radius: 20px;
-  flex: 1;
   margin-right: 0.7rem;
   font-size: 1.2rem;
 }
@@ -72,9 +72,10 @@ body {
 .details {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
+  justify-content: center;
+  padding: 0 15px;
   margin-top: 50px;
+  gap: 1rem;
 }
 .col {
   display: flex;
@@ -82,12 +83,12 @@ body {
   text-align: left;
 }
 .col img {
-  width: 3.2rem;
+  width: 2.8rem;
   margin-right: 10px;
 }
 .humidity,
 .wind {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   margin-top: -0.3rem;
 }
 .weather,
